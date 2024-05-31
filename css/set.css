@@ -1,0 +1,347 @@
+
+* {margin: 0; padding: 0;}
+
+body::-webkit-scrollbar{
+    width: 1.5vw;
+    
+}
+body::-webkit-scrollbar-track{
+    background-color: var(--mcolor);
+}
+body::-webkit-scrollbar-thumb{
+    background-color: var(--tcolor);
+}
+
+
+input[type='submit']{
+     color: white;
+     background-color: rgb(51, 35, 34);
+     width: 50%;
+     font-size: 4vh;
+     height: 10vh;
+     border: black .3vh solid;
+     border-radius: 10vh;
+     transition: .8s;
+ }
+ 
+ input[type='submit']:hover{
+     border: white .3vh solid;
+     transform: scale(1.05);
+     background-color: black;
+     cursor: pointer;
+ 
+ }
+
+ .del:hover{
+     color: rgb(254, 121, 121);
+ }
+
+ .div{
+    margin-top:18vh;
+    text-align:center;
+    font-size:4vw;
+    background-color: black;
+    color: white;
+    
+ }
+
+ .info{
+    border-bottom: solid 5vh;
+   padding-bottom: 2vh;
+ }
+
+ 
+:root{
+    --mcolor: black;
+    --scolor: rgb(51, 35, 34);
+    --tcolor: rgb(115, 64, 64);
+}
+
+nav{
+    z-index: 10;
+    box-shadow: 0vw 1vh 10vh -1vh var(--mcolor);
+    height: 12vh;
+    width: 100%;
+    background: linear-gradient(180deg, var(--mcolor), var(--tcolor), var(--tcolor), var(--mcolor));
+    position: absolute;
+    top: 0;
+    /* right: 10vw; */
+    margin-top: 0;
+    /* border-radius: 0 0 5vh 5vh;s */
+    border-bottom: .5vh solid white;
+}
+
+.nav a{
+    text-decoration: none;
+    color: black;
+    transition: .5s;
+    font-weight: bold;
+
+}
+
+.nav li a:hover{
+    color: white;
+    transition-duration:.3s ;
+    border-top: white dotted .4vw;
+}
+
+.nav{
+    display: flex;
+    list-style-type: none;
+    position: absolute;
+    top: 0;
+    right: 5vw;
+    margin-top: 1.7vh;
+    margin-right: 2vw;
+    z-index: 11;
+}
+
+.nav .lb{
+    color: white;
+    border: white .4vh solid ;
+    border-radius:10vh ;
+    padding: .2vh 1vw .7vh;
+    background-color: black;
+}
+.nav .lb:hover{
+    color: rgb(254, 121, 121);
+    border: white .4vh solid ;
+
+}
+
+.nav li{
+    padding: 1vw;
+    font-size: 2vw;
+    background-color: transparent;
+}
+
+
+.nav .me{
+    background-color: transparent;
+    color: white;
+    font-size: 2.5vw;
+    text-shadow: 0px .5vh 2vh  var(--mcolor);
+}
+
+.logo{
+    position: absolute;
+    margin-top: .5vh;
+    margin-left: 5vw;
+    user-select: none;
+}
+
+.logo h1{
+    text-transform: uppercase;
+    color: var(--mcolor);
+    font-size: 3.3vw;
+    padding-left: 1vw ;
+
+}
+
+.logo h1:after{
+    content: "mas";
+    font-size: larger;
+    text-transform: uppercase;
+    color: white;
+    text-shadow: 0 0 6vh var(--mcolor);
+
+}
+
+h3{
+    border: solid white 1vh;
+    width: 50% ;
+    margin: 1vh auto 0;
+    border-radius:10vh;
+
+}
+
+h4{
+  text-align: center;
+  font-size: 6vh;
+ 
+}
+
+
+form{
+    margin: 3vh auto;
+    padding: 3vh 0;
+    display: block;
+    width: 50vw;
+    height: fit-content;
+    text-align: center;
+    border: solid;
+    border-radius: 3vh;
+    background-color: rgb(115, 64, 64);
+}
+
+.set{
+    border:none;
+    background-color:white;
+}
+input{
+   margin:1vh auto ;
+   height: 5vh;
+   width: 80%;
+   padding: .1vh;
+   outline: none;
+   text-align: center;
+   display: block;
+   font-size: 3vh;
+
+}
+
+
+label{
+    font-size: 5vh;
+    color: black;
+
+}
+
+fieldset{
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+    border-top: black double 1vh;
+    font-size: 5vh;
+    color: white;
+    font-weight: bolder;
+}
+legend{
+    text-align: start;
+    margin-left: 5vw;
+    padding: 0 1vw;
+}
+
+fieldset a{
+    text-decoration: none;
+    color: black;
+    display: inline-block;
+    font-size: 4vh;
+    margin-left: 80%;
+    padding: 1vh .5vw;
+    border: black solid .2vh;
+    border-radius: 10vh;
+    background-color: white;
+    
+}
+
+fieldset a:hover{
+    background-color: black;
+    color: white;
+}
+
+.err{
+    color: red;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 5vh;
+    margin-top: 6vh;
+    text-align: center;
+}
+
+.edit{
+    color: green;
+    font-size: 5vh;
+    margin-top: 6vh;
+    text-align: center;
+}
+
+h4 p{
+    display: inline-block;
+    color: var(--tcolor);
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 2vh;
+}
+
+.conf{
+    margin:7vh auto 0;
+    display: block;
+
+}
+
+
+footer{
+    height: 30vh;
+    width: 100%;
+    background:linear-gradient(180deg, var(--mcolor), var(--tcolor), var(--tcolor), var(--mcolor));
+    color: var(--mcolor);
+    border-radius: 10vh 10vh 0 0 ;
+    text-align: left;
+    border-top: .5vh solid white;
+    margin-top: 10vh;
+    box-shadow: 0vw 1vh 10vh -1vh var(--mcolor);
+
+}
+
+footer .logo{
+    position: static;
+    
+}
+footer hr{
+    background-color: black;
+    height: 1vh;
+    width: 90vw;
+    text-align: center;
+    margin: auto;
+    border: none;
+    border-radius: 5vw;
+}
+
+footer table{
+    margin: 3vh 0 0 5vw;
+    font-size: 2vw;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+  
+}
+
+
+td{
+padding: 0vw 1vw 1vw;
+transition: .5s;
+font-size: 1.5vw;
+color: white;
+font-weight: bold;
+cursor: pointer;
+}
+
+td i{
+    font-size: 2.5vw;
+    transition: .5s;
+}
+
+td i:hover{
+    transform: scale(1.3);
+}
+
+.fa-facebook:hover,.fa-twitter:hover{
+    color: rgb(0, 60, 255);
+}
+.fa-instagram:hover{
+    color: rgb(255, 0, 0);
+}
+.fa-whatsapp:hover {
+    color: rgb(0, 255, 21);
+}
+
+.goto-menu{
+    position: fixed;
+    opacity: 0;
+    bottom: -6vh;
+    right: 2vw;
+    width: 3vw;
+    transition: 1s;
+    height: 2.5vw;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    font-size: 3vw;
+    border-radius: 50% 50% 0 0;
+    cursor: pointer;
+    background-color: black;
+}
+
+.goto-menu:hover{
+    transform: scale(1.3);
+}
